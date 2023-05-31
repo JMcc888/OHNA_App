@@ -1,0 +1,34 @@
+<%- include('../partials/headers&footers/admin-bootstrap-header') %>
+<%- include('../partials/navs/contact_nav') %>
+<section id="users-dashboard">
+    <!-- Headers -->
+    <div class="cards-header">
+      <h1>Configure Users</h1>
+      <a href="/user-settings/add-user"
+        ><button class="btn btn-dark">Add User</button></a
+      >
+    </div>
+    <div class="cards">
+      <!-- Cards -->
+
+      <% users.forEach((u) => { %>
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><%= u.username%></h5>
+              <h6 class="card-subtitle mb-2 text-muted">User Information:</h6>
+              <p class="card-text">Email: <%= u.email%></p>
+              <a href="#" class="card-link">
+                <a href="/user-settings/<%= u._id %>">
+                    <button class="btn btn-success">Details</button>
+                </a>
+              </a>
+            </div>
+          </div>
+    <% }) %>
+
+
+      
+    </div>
+
+  </section>
+<%- include('../partials/headers&footers/bootstrap-footer') %>

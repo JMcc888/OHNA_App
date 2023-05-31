@@ -1,0 +1,172 @@
+<%- include('../partials/headers&footers/admin-bootstrap-header') %>
+<%- include('../partials/navs/contact_nav') %>
+
+<div class="apply-client-form-wrap">
+    <h1>Edit <%= form.First %>'s Information</h1>
+        <form
+            class="add-user-form job-edit"
+            action="/applications/<%=form._id%>?_method=PUT" 
+            method="POST"
+            
+          >
+            <small id="passwordHelpInline" class="text-muted">
+                Client's First Name
+            </small>
+            <input
+              type="text"
+              class="form-control"
+              name="First"
+              value="<%= form.First%>"
+              autofocus
+            />
+    
+            <small id="passwordHelpInline" class="text-muted">
+                Client's Middle Name
+              </small>
+              <input
+                type="text"
+                class="form-control"
+                name="Middle"
+                value="<%= form.Middle %>"
+                autofocus
+              />
+    
+            <small id="passwordHelpInline" class="text-muted">
+              Client's Last Name
+            </small>
+    
+            <input
+              type="text"
+              class="form-control"
+              name="Last"
+              value="<%= form.Last %>"
+              autofocus
+            />
+    
+            <small id="passwordHelpInline" class="text-muted">
+                Client's Date of Birth
+              </small>
+      
+              <input
+                type="datetime-local"
+                class="form-control"
+                name="DOB"
+                value="<%=form.DOB.toISOString().split("Z")[0]%>%>"
+                autofocus
+              />
+    
+              <small id="passwordHelpInline" class="text-muted">
+                Client's address
+              </small>
+      
+              <input
+                type="text"
+                class="form-control"
+                name="Address"
+                value="<%= form.Address %>"
+                autofocus
+              />
+    
+              <small id="passwordHelpInline" class="text-muted">
+                Client's email address
+              </small>
+      
+              <input
+                type="email"
+                class="form-control"
+                name="Email"
+                value="<%= form.Email %>"
+                autofocus
+                placeholder="your_email@gmail.com"
+              />
+    
+              <small id="passwordHelpInline" class="text-muted">
+                Client's Home Phone Number
+              </small>
+      
+              <input
+                type="text"
+                class="form-control"
+                name="HomePhone"
+                value="<%= form.HomePhone %>"
+                autofocus
+              />
+    
+              <small id="passwordHelpInline" class="text-muted">
+                Client's Mobile Phone Number
+              </small>
+      
+              <input
+                type="text"
+                class="form-control"
+                name="MobilePhone"
+                value="<%= form.MobilePhone %>"
+                autofocus
+              />
+    
+              <small id="passwordHelpInline" class="text-muted">
+                Client Emergency Contact Name
+              </small>
+      
+              <input
+                type="text"
+                class="form-control"
+                name="EmergencyContactName"
+                value="<%= form.EmergencyContactName %>"
+                autofocus
+              />
+    
+              <small id="passwordHelpInline" class="text-muted">
+                Contact Relationship to client
+              </small>
+      
+              <input
+                type="text"
+                class="form-control"
+                name="EmergencyContactRelationship"
+                value="<%= form.EmergencyContactRelationship %>"
+                autofocus
+              />
+    
+              <small id="passwordHelpInline" class="text-muted">
+                Emergency Contact Number
+              </small>
+      
+              <input
+                type="text"
+                class="form-control"
+                name="EmergencyContactNumber"
+                value="<%= form.EmergencyContactNumber %>"
+                autofocus
+              />
+    
+              <small id="passwordHelpInline" class="text-muted">
+                Medical/Health Insurance Provider
+              </small>
+      
+              <input
+                type="text"
+                class="form-control"
+                name="PrimaryProvider"
+                value="<%= form.PrimaryProvider %>"
+                autofocus
+              />
+    
+              <small id="passwordHelpInline" class="text-muted">
+                Secondary Medical/Insurance Provider
+              </small>
+      
+              <input
+                type="text"
+                class="form-control"
+                name="SecondaryProvider"
+                value="<%= form.SecondaryProvider %>"
+                autofocus
+              />
+              <button type="button submit" class="btn btn-primary form-control">
+                Submit Changes
+              </button>
+          </form>
+    </div>
+
+<%- include('../partials/headers&footers/footer') %>

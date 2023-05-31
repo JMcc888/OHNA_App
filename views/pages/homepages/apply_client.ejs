@@ -1,0 +1,198 @@
+<%- include('../partials/headers&footers/bootstrap-header') %>
+<%- include('../partials/navs/apply_nav') %>
+
+<div class="apply-client-form-wrap">
+<h1>Service Provision Contact Form</h1>
+
+    <form
+        class="add-user-form client-apply-form"
+        action="/applications/client"
+        method="POST"
+      >
+      <small id="passwordHelpInline" class="text-center text-muted required">
+        Required fields are marked by a
+      </small>
+
+        <small id="passwordHelpInline" class="text-muted required">
+            Client's First Name
+        </small>
+        <input
+          type="text"
+          class="form-control"
+          name="First"
+          value=""
+          placeholder=""
+          autofocus
+          required
+        />
+
+        <small id="passwordHelpInline" class="text-muted">
+            Client's Middle Name
+          </small>
+          <input
+            type="text"
+            class="form-control"
+            name="Middle"
+            placeholder=""
+            value=""
+            autofocus
+          />
+
+        <small id="passwordHelpInline" class="text-muted required">
+          Client's Last Name
+        </small>
+
+        <input
+          type="text"
+          class="form-control"
+          name="Last"
+          value=""
+          placeholder=""
+          autofocus
+          required
+        />
+
+        <small id="passwordHelpInline" class="text-muted required">
+            Client's Date of Birth
+        </small>
+  
+          <input
+            type="date"
+            class="form-control"
+            name="DOB"
+            value=""
+            autofocus
+            required
+          />
+
+          <small id="passwordHelpInline" class="text-muted required">
+            Client's address
+          </small>
+  
+          <input
+            type="text"
+            class="form-control"
+            name="Address"
+            placeholder=""
+            value=""
+            autofocus
+            required
+          />
+
+          <small id="passwordHelpInline" class="text-muted required">
+            Client's email address
+          </small>
+  
+          <input
+            type="email"
+            class="form-control"
+            name="Email"
+            value=""
+            autofocus
+            placeholder="your_email@gmail.com"
+            required
+          />
+
+          <small id="passwordHelpInline" class="text-muted required">
+            Client's Primary/Home Phone Number
+          </small>
+  
+          <input
+            type="text"
+            class="form-control"
+            name="HomePhone"
+            value=""
+            placeholder="ex: (111)-111-1111"
+            autofocus
+            required
+          />
+
+          <small id="passwordHelpInline" class="text-muted">
+            Client's Mobile Phone Number
+          </small>
+  
+          <input
+            type="text"
+            class="form-control"
+            name="MobilePhone"
+            placeholder="ex: (111)-111-1111"
+            value=""
+            autofocus
+          />
+
+          <small id="passwordHelpInline" class="text-muted required">
+            Client Emergency Contact Name
+          </small>
+  
+          <input
+            type="text"
+            class="form-control"
+            name="EmergencyContactName"
+            value=""
+            placeholder=""
+            autofocus
+            required
+          />
+
+          <small id="passwordHelpInline" class="text-muted required">
+            Contact Relationship to client
+          </small>
+  
+          <input
+            type="text"
+            class="form-control"
+            name="EmergencyContactRelationship"
+            value=""
+            placeholder=""
+            autofocus
+            required
+          />
+
+          <small id="passwordHelpInline" class="text-muted required">
+            Emergency Contact's Phone Number
+          </small>
+  
+          <input
+            type="text"
+            class="form-control"
+            name="EmergencyContactNumber"
+            placeholder="ex: (111)-111-1111"
+            value=""
+            autofocus
+            required
+          />
+
+          <small id="passwordHelpInline" class="text-muted required">
+            Medical/Health Insurance Provider
+          </small>
+  
+          <input
+            type="text"
+            class="form-control"
+            name="PrimaryProvider"
+            value=""
+            placeholder=""
+            autofocus
+            required
+          />
+
+          <small id="passwordHelpInline" class="text-muted">
+            Secondary Medical/Insurance Provider
+          </small>
+  
+          <input
+            type="text"
+            class="form-control"
+            name="SecondaryProvider"
+            value=""
+            placeholder=""
+            autofocus
+          />
+
+
+        <button type="button submit" class="btn btn-primary form-control">
+          Submit
+        </button>
+      </form>
+</div>
+<%- include('../partials/headers&footers/footer') %>

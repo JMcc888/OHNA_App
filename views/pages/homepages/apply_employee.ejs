@@ -1,0 +1,126 @@
+<%- include('../partials/headers&footers/bootstrap-header') %>
+<%- include('../partials/navs/apply_nav') %>
+
+<div class="apply-client-form-wrap">
+<h1>Application Contact Form</h1>
+
+    <form
+        class="add-user-form employee-apply-form"
+        action="/job-applications"
+        method="POST"
+      >
+      <small id="passwordHelpInline" class="text-center text-muted required">
+        Required fields are marked by a
+      </small>
+        <small id="passwordHelpInline" class="text-muted required">
+             First Name
+        </small>
+        <input
+          type="text"
+          class="form-control"
+          name="First"
+          value=""
+          placeholder="First"
+          autofocus
+          required
+        />
+
+        <small id="passwordHelpInline" class="text-muted">
+             Middle Name
+          </small>
+          <input
+            type="text"
+            class="form-control"
+            name="Middle"
+            placeholder="Middle"
+            value=""
+            autofocus
+          />
+
+        <small id="passwordHelpInline" class="text-muted required">
+           Last Name
+        </small>
+
+        <input
+          type="text"
+          class="form-control"
+          name="Last"
+          value=""
+          placeholder="Last"
+          autofocus
+          required
+        />
+
+        <small id="passwordHelpInline" class="text-muted required">
+             Date of Birth
+          </small>
+  
+          <input
+            type="date"
+            class="form-control"
+            name="DOB"
+            value=""
+            autofocus
+            required
+          />
+
+          <small id="passwordHelpInline" class="text-muted required">
+            Home Address
+          </small>
+  
+          <input
+            type="text"
+            class="form-control"
+            name="Address"
+            value=""
+            autofocus
+            required
+          />
+
+          <small id="passwordHelpInline" class="text-muted required">
+            Email Address
+          </small>
+  
+          <input
+            type="email"
+            class="form-control"
+            name="Email"
+            value=""
+            autofocus
+            placeholder="your_email@gmail.com"
+            required
+          />
+
+          <small id="passwordHelpInline" class="text-muted required">
+            Home/Primary Phone Number
+          </small>
+  
+          <input
+            type="text"
+            class="form-control"
+            name="HomePhone"
+            value=""
+            placeholder="ex: (111)-111-1111"
+            autofocus
+            required
+          />
+
+          <small id="passwordHelpInline" class="text-muted">
+            Mobile Phone Number
+          </small>
+  
+          <input
+            type="text"
+            class="form-control"
+            name="MobilePhone"
+            placeholder="ex: (111)-111-1111"
+            value=""
+            autofocus
+          />
+
+        <button type="button submit" class="btn btn-primary form-control">
+          Submit
+        </button>
+      </form>
+</div>
+<%- include('../partials/headers&footers/footer') %>
